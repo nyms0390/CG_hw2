@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+glfw in CG2021, no dependencies
+HW2 in CG2021, depends on:
+glfw in CG2021 (explicit)
