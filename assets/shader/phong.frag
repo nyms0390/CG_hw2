@@ -56,14 +56,6 @@ void main() {
     float ks = 0.75;
     float kd = 0.75;
     
-    
-    
-    color = ambient + diffuse + specular;
-    
-    FragColor = vec4(color, 1.0);
-}
-
-vec3 calPointLight() {
     // Ambient
     vec3 ambient = ka * color;
     // Diffuse
@@ -73,4 +65,12 @@ vec3 calPointLight() {
     vec3 viewDir = normalize(viewPosition.xyz - rawPosition);
     vec3 halfwayDir = normalize(lightDir + viewDir);
     vec3 specular = ks * pow(max(dot(normal, halfwayDir), 0.0), 8.0) * color;
+    
+    color = ambient + diffuse + specular;
+    
+    FragColor = vec4(color, 1.0);
 }
+
+//vec3 calPointLight() {
+    
+//}
