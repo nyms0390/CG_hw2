@@ -1,0 +1,4 @@
+build/
+bin/
+src/CG2021.build/
+*.o
