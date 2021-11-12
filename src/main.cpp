@@ -125,6 +125,7 @@ int main() {
         //       We only set some variables here, you need more when you're lighting
         shaderPrograms[i].uniformBlockBinding("model", 0);
         shaderPrograms[i].uniformBlockBinding("camera", 1);
+        shaderPrograms[i].uniformBlockBinding("light", 2);
         // Maybe light here or other uniform you set :)
 
         shaderPrograms[i].setUniform("diffuseTexture", 0);
